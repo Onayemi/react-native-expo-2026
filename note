@@ -1,0 +1,34 @@
+https://reactnative.dev/docs/set-up-your-environment
+tutor windows 11: https://www.youtube.com/watch?v=cIruhXDwvoo
+tutor macos and windows 11: https://www.youtube.com/watch?v=k6Yimk51rwY
+
+npx create-expo-app .
+
+npm run android|ios|web
+
+npm run reset-project ===> and click no remove
+
+app/\_layout.tsx
+/index.tsx
+
+login.tsx
+
+https://icons.expo.fyi/Index
+
+## For Input
+
+// use for Input
+npx expo install react-native-paper
+
+import { Text, TextInput, Button } from "react-native-paper"
+
+========= Laravel 12 API =========
+Laravel new project-name
+php artisan install:api
+
+Video stop at 1:45:00
+
+npx expo install react-native-safe-area-context react-native-gesture-handler
+npm install axios react-hook-form zod @hookform/resolvers
+npx expo install expo-secure-store
+npm install axios
