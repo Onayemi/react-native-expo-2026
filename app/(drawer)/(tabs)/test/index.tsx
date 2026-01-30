@@ -79,7 +79,7 @@ export default function ProductCardGrid() {
                         style={[styles.item, { width: ITEM_WIDTH }]}
                         onPress={() =>
                           router.push({
-                            pathname: "/single-page/product/[id]",
+                            pathname: `/(drawer)/(tabs)/test/${product.id}`,
                             params: {
                               id: product.id,
                               name: product.name,

@@ -40,10 +40,12 @@ const DrawerLayout = () => {
           },
         }}
       />
+
       <Drawer.Screen
-        name="(tabs)/profile"
+        name="(tabs)"
         options={{
-          title: "Profile",
+          headerShown: false,
+          title: "Dashboard",
           drawerIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="view-dashboard-outline"
@@ -54,10 +56,10 @@ const DrawerLayout = () => {
         }}
       />
       <Drawer.Screen
-        name="(tabs)"
+        name="(tabs)/profile"
         options={{
           headerShown: false,
-          title: "Dashboard",
+          title: "Profile2",
           drawerIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="view-dashboard-outline"
@@ -82,6 +84,20 @@ const DrawerLayout = () => {
           title: "Booking",
           drawerIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="shopping" color={color} size={size} />
+          ),
+        }}
+      />
+
+      <Drawer.Screen
+        name="help"
+        options={{
+          title: "Help Hotline",
+          drawerIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="help-circle-outline"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />

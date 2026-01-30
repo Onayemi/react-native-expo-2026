@@ -2,6 +2,8 @@ https://reactnative.dev/docs/set-up-your-environment
 tutor windows 11: https://www.youtube.com/watch?v=cIruhXDwvoo
 tutor macos and windows 11: https://www.youtube.com/watch?v=k6Yimk51rwY
 
+git push origin -u main
+
 npx create-expo-app .
 
 npm run android|ios|web
@@ -32,3 +34,5 @@ npx expo install react-native-safe-area-context react-native-gesture-handler
 npm install axios react-hook-form zod @hookform/resolvers
 npx expo install expo-secure-store
 npm install axios
+
+npx expo prebuild

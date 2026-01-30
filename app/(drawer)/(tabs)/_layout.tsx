@@ -1,8 +1,10 @@
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Tabs } from "expo-router";
+import { Tabs, useNavigation } from "expo-router";
 import React from "react";
+import { Pressable } from "react-native";
 
 const TabLayout = () => {
+  const navigation = useNavigation();
   return (
     <Tabs
       screenOptions={{
@@ -68,6 +70,27 @@ const TabLayout = () => {
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="lock" color={color} size={size} />
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="test/[id]"
+        options={{
+          href: null,
+          title: "Testing",
+          headerShown: true,
+          headerLeft: () =>
+            navigation.canGoBack() ? (
+              <Pressable
+                onPress={() => navigation.goBack()}
+                style={{ marginLeft: 12 }}
+              >
+                <MaterialCommunityIcons
+                  name="arrow-left"
+                  size={24}
+                  color="#000"
+                />
+              </Pressable>
+            ) : null,
         }}
       />
     </Tabs>
